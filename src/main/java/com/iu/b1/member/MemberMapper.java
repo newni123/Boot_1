@@ -7,5 +7,6 @@ import org.springframework.stereotype.Repository;
 public interface MemberMapper {
 	public int memberJoin(MemberVO memberVO) throws Exception;
 	public MemberVO memberLogin(MemberVO memberVO) throws Exception;
-	
+	public MemberFilesVO memberImage(MemberVO memberVO) throws Exception;
+	public MemberVO memberCheck(MemberVO memberVO) throws Exception;
 }

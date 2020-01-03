@@ -7,8 +7,17 @@
 	<insert id="memberJoin" parameterType="com.iu.b1.member.MemberVO">
 		insert into members values(#{id},#{pw},#{name},#{email})
 	</insert>
+	
 	<select id="memberLogin" parameterType="com.iu.b1.member.MemberVO" resultType="com.iu.b1.member.MemberVO">
 		select * from members where id = #{id} and pw = #{pw}
+	</select>
+	
+	<select id="memberImage" parameterType="com.iu.b1.member.MemberVO" resultType="com.iu.b1.member.MemberFilesVO">
+		select * from memberFiles where id = #{id}
+	</select>
+	
+	<select id="memberCheck"  parameterType="com.iu.b1.member.MemberVO" resultType="com.iu.b1.member.MemberVO">
+		select * from members where id = #{id}
 	</select>
 </mapper>
 
