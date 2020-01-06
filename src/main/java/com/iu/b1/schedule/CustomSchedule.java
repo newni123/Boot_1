@@ -20,7 +20,7 @@ public class CustomSchedule {
 		//Thread.sleep(2000);
 	}
 
-	@Scheduled(cron = "*/3 * * * * * ")
+	//@Scheduled(cron = "*/3 * * * * * ")
 	public void cronSchedule() throws Exception {
 		System.out.println("쉬는 시간");
 	}

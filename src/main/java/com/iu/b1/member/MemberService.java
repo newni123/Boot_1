@@ -46,7 +46,7 @@ public class MemberService {
 	public MemberVO memberLogin(MemberVO memberVO) throws Exception {
 		return memberMapper.memberLogin(memberVO);
 	}
-
+	
 	public MemberFilesVO memberImage(MemberVO memberVO) throws Exception {
 		return memberMapper.memberImage(memberVO);
 	}
