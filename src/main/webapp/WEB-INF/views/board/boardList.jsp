@@ -48,7 +48,7 @@
 					<li><span id="${pager.startNum - 1}" class="list">이전</span></li>
 				</c:if>
 				<c:forEach begin="${pager.startNum}" end="${pager.lastNum}" var="i">
-					<li><span id="${i}" class="list"><a href="./noticeList?curPage=${i}">${i}</a></span></li>
+					<li><span id="${i}" class="list">${i}</span></li>
 				</c:forEach>
 				<c:if test="${pager.curBlock < pager.totalBlock}">
 					<li><span id="${pager.lastNum + 1}" class="list">다음</span></li>
